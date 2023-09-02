@@ -10,19 +10,10 @@ function App() {
     <Router>
     <div>
       <Switch>
-        <Route path="/">
-         <HomePage/>
-       </Route>
-       <Route path="/Signin">
-         <Signin/>
-       </Route>
-       <Route path="/Signup">
-         <Signup/>
-       </Route>
-       <Route path="/Post">
-         <Post/>
-       </Route>
-
+      <Route path="/"><HomePage/></Route>
+       <Route path="/Signin"><Signin/></Route>
+       <Route path="/Signup"><Signup/></Route>
+       <Route path="/Post"><Post/></Route>
       </Switch>
       
       
