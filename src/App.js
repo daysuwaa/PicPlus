@@ -1,23 +1,19 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from "./components/HomePage";
-import Post  from "./components/Post";
+import Post from "./components/Post";
 import Signin from "./components/Signin";
 import Signup from "./components/Signup";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
     <Router>
-    <div>
-      <Switch>
-      <Route path="/"><HomePage/></Route>
-       <Route path="/Signin"><Signin/></Route>
-       <Route path="/Signup"><Signup/></Route>
-       <Route path="/Post"><Post/></Route>
-      </Switch>
-      
-      
-    </div>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/signin" element={<Signin />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/post" element={<Post />} />
+      </Routes>
     </Router>
   );
 }
