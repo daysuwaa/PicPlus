@@ -6,7 +6,7 @@ import Signin from "./components/Signin";
 import Signup from "./components/Signup";
 import ErrorPage from "./components/ErrorPage";
 import  Navbar  from "./components/Navbar";
-import Footer from "./components/Footer";
+
 
 function App  () {
   return (
@@ -20,7 +20,7 @@ function App  () {
        <Route path="PicPlus/post" element={<Post />} />
        <Route path="*" element ={<ErrorPage/>} />
      </Routes>
-     <Footer/>
+    
    </Router>
   
 
