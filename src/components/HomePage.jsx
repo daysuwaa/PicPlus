@@ -22,13 +22,13 @@ const HomePage = () => {
         <div className="flex mt-9">
           <Link
             to="/PicPlus/signin"
-            className="bg-indigo-700 hover:bg-indigo-800 text-white font-semibold text-sm py-3 px-6 rounded-3xl mr-4 transition duration-300 ease-in-out"
+            className="bg-indigo-700 hover:bg-indigo-800 text-white font-semibold text-sm py-3 px-6 rounded-3xl mr-4 transition duration-300 ease-in-out shadow-md shadow-black"
           >
             Sign In
           </Link>
           <Link
             to="/PicPlus/signup"
-            className="bg-indigo-700 hover:bg-indigo-800 text-white text-sm font-semibold py-3 px-6 rounded-3xl transition duration-300 ease-in-out"
+            className="bg-indigo-700 hover:bg-indigo-800 text-white text-sm font-semibold py-3 px-6 rounded-3xl transition duration-300 ease-in-out shadow-md shadow-black"
           >
             Sign Up
           </Link>
