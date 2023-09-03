@@ -3,7 +3,8 @@ import React from 'react'
 const Navbar = () => {
   return (
     <div>
-        <h1 className='bg-black h-[3.7rem] text-white font-customFont text-center pt-3 text-2xl'>PicPlus+</h1> 
+        <h1 className="bg-gradient-to-r from-blue-100 via-blue-400 to-blue-800 h-[4rem] pt-3 text-3xl font-customFont text-gray-200 text-center">PicPlus+</h1>
+  
    </div>
   )
 }
