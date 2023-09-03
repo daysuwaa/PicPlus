@@ -11,10 +11,10 @@ function App  () {
    
    <Router>
       <Routes>
-       <Route exact path="/picplus" element={<HomePage />} />
-       <Route path="picplus/signin" element={<Signin />} />
-       <Route path="picplus/signup" element={<Signup />} />
-       <Route path="picplus/post" element={<Post />} />
+       <Route exact path="/PicPlus" element={<HomePage />} />
+       <Route path="PicPlus/signin" element={<Signin />} />
+       <Route path="PicPlus/signup" element={<Signup />} />
+       <Route path="PicPlus/post" element={<Post />} />
        <Route path="*" element ={<ErrorPage/>} />
      </Routes>
    </Router>

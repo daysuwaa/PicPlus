@@ -2,8 +2,12 @@ import React from 'react'
 
 const HomePage = () => {
   return (
-    <div className='text-2xl text-black'>HomePage BITCH</div>
+    <div>
+      <div className='bg-black'>
+
+      </div>
+    </div>
   )
 }
 
-export default HomePage;
+export default HomePage
