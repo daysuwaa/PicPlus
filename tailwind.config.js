@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        customFont:['Shrinkhand', 'cursive']
+        customFont:['Shrikhand', 'cursive']
       }
     },
   },
