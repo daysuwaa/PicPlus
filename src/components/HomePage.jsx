@@ -2,8 +2,8 @@ import React from 'react'
 
 const HomePage = () => {
   return (
-    <div className='text-2xl text-black'>HomePage</div>
+    <div className='text-2xl text-black'>HomePage BITCH</div>
   )
 }
 
-export default HomePage
+export default HomePage;
