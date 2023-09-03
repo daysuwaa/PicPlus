@@ -1,19 +1,39 @@
 import React from 'react';
 import Pic from '../assets/picturee2.png';
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
   return (
-    <div class="md:flex">
-      <div class="md:w-1/4 pt-[3rem] px-9">
-        <h1 className='text-3xl text-blue-800 font-bold pb-3 border-b border-blue-950'>Post your Pictures</h1>
-        <p className='text-blue-500 font-semibold '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias culpa rem eligendi est aut a. Vel, hic qui dolor cumque nulla assumenda voluptas aliquam cum asperiores omnis quod libero cupiditate.</p>
+    <div className="md:flex">
+      <div className="md:w-1/4 pt-16 mx-10">
+        <h1 className="text-4xl text-indigo-900 font-extrabold pb-4 border-b-4  ">
+          Explore the World of Photography
+        </h1>
+        <p className="text-indigo-800 font-semibold mt-8">
+          Discover the beauty of moments captured in time. Share your memories with the world.<br></br>
+          Let's get started
+        </p>
+        <div className="flex mt-12">
+          <Link
+            to="/PicPlus/signin"
+            className="bg-indigo-700 hover:bg-indigo-800 text-white font-semibold text-sm py-3 px-6 rounded-3xl mr-4 transition duration-300 ease-in-out"
+          >
+            Sign In
+          </Link>
+          <Link
+            to="/PicPlus/signup"
+            className="bg-indigo-700 hover:bg-indigo-800 text-white text-sm font-semibold py-3 px-6 rounded-3xl transition duration-300 ease-in-out"
+          >
+            Sign Up
+          </Link>
+        </div>
       </div>
 
-      <div class="w-full md:w-3/4 pt-[3rem]"> {/* Use w-full for xs and w-3/4 for md and larger screens */}
-        <img src={Pic} alt='pix' className='w-full' /> {/* Use w-full to take up the full width */}
+      <div className="w-full md:w-3/4 pt-4">
+        <img src={Pic} alt="pix" className="w-full rounded " />
       </div>
     </div>
   );
-}
+};
 
 export default HomePage;
