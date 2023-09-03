@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom';
 const HomePage = () => {
   return (
     <div className="md:flex">
-      <div className="md:w-1/4 pt-16 mx-10">
+      <div className="md:w-1/4 pt-[10rem] mx-[6rem]">
         <h1 className="text-4xl text-indigo-900 font-extrabold pb-4 border-b-4  ">
           Explore the World of Photography
         </h1>
-        <p className="text-indigo-800 font-semibold mt-8">
+        <p className="text-indigo-800 font-semibold mt-8 text-lg">
           Discover the beauty of moments captured in time. Share your memories with the world.<br></br>
           <div className="relative">
           <p className="text-indigo-800 font-semibold mt-5 pb-3 relative cursor-pointer group w-1/2 lg:w-1/2 ">
@@ -35,7 +35,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="w-full md:w-3/4 pt-4">
+      <div className="w-full md:w-3/4 pt-[5rem]">
         <img src={Pic} alt="pix" className="w-full rounded " />
       </div>
     </div>
