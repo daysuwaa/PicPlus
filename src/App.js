@@ -5,11 +5,13 @@ import Post from "./components/Post";
 import Signin from "./components/Signin";
 import Signup from "./components/Signup";
 import ErrorPage from "./components/ErrorPage";
+import  Navbar  from "./components/Navbar";
 
 function App  () {
   return (
    
    <Router>
+  <Navbar/>
       <Routes>
        <Route exact path="/PicPlus" element={<HomePage />} />
        <Route path="PicPlus/signin" element={<Signin />} />
