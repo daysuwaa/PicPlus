@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const HomePage = () => {
   return (
     <div className="md:flex">
-      <div className="md:w-1/4 pt-[10rem] mx-[6rem]">
+      <div className="md:w-1/4 pt-[10rem] mx-[3rem] lg:mx-[5rem]">
         <h1 className="text-4xl text-indigo-900 font-extrabold pb-4 border-b-4  ">
           Explore the World of Photography
         </h1>
