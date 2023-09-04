@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { FiEye, FiEyeOff} from 'react-icons/fi';
+import { FiEye, FiEyeOff, FiMail, FiLock } from 'react-icons/fi';
+import { MdPersonOutline } from 'react-icons/md';
 import Picture2 from '../assets/pic2.jpg'; // Import the image
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; // Import Link for navigation
 
 const SignIn = () => {
   const [email, setEmail] = useState('');
@@ -55,7 +56,7 @@ const SignIn = () => {
               <label className='pb-2'>Username:</label>
               <div className="relative">
                 <div className="flex items-center">
-                 
+                  <MdPersonOutline className="text-indigo-600 font-bold mr-2 absolute inset-y-0 left-0 pl-3 pt-7" />
                   <input
                     className={`shadow appearance-none border border-black rounded w-full py-2 pl-10 pr-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mt-2 ${errors.username && 'border-red-500'}`}
                     type="text"
@@ -73,6 +74,7 @@ const SignIn = () => {
               <label className='pb-2'>Email:</label>
               <div className="relative">
                 <div className="flex items-center">
+                  <FiMail className="text-indigo-600 font-bold mr-2 absolute inset-y-0 left-0 pl-3 pt-7" />
                   <input
                     className={`shadow appearance-none border border-black rounded w-full py-2 pl-10 pr-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mt-2 ${errors.email && 'border-red-500'}`}
                     type="email" // Changed to type="email" for email validation
@@ -90,7 +92,7 @@ const SignIn = () => {
               <label className='pb-2'>Password:</label>
               <div className="relative">
                 <div className="flex items-center">
-                  
+                  <FiLock className="text-indigo-600 font-extrabold mr-2 absolute inset-y-0 left-0 pl-3 pt-7" />
                   <input
                     className={`shadow appearance-none border border-black rounded w-full py-2 pl-10 pr-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mt-2 ${errors.password && 'border-red-500'}`}
                     type={showPassword ? 'text' : 'password'}
@@ -102,7 +104,7 @@ const SignIn = () => {
                     className="absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer"
                     onClick={handlePasswordToggle}
                   >
-                    {showPassword ? <FiEyeOff className="text-black" /> : <FiEye className="text-black" />}
+                    {showPassword ? <FiEyeOff className="text-blacl" /> : <FiEye className="text-black" />}
                   </span>
                 </div>
               </div>
@@ -116,19 +118,30 @@ const SignIn = () => {
               Forgot password?
             </Link>
 
+            
             {/* Sign-in button */}
             <div className="flex items-center justify-center mt-6">
-              <button
-                className="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 focus:outline-none focus:shadow-outline w-full md:w-[400px] rounded h-11"
-                type="button"
-                onClick={handleSignIn}
-              >
-                <p className='text-sm'>Sign In</p>
-              </button>
-            </div>
+  <Link to="/PicPlus/post">
+    <button
+      className="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 focus:outline-none focus:shadow-outline rounded h-11"
+      type="button"
+      onClick={handleSignIn}
+      style={{ width: '370px' }}
+    >
+      <p className='text-sm'>Sign In</p>
+    </button>
+  </Link>
+</div>
 
-          
-          
+            {/* Text */}
+            <p className='pt-4 text-center'>Don't have an account?
+              <Link
+                to="/PicPlus/signup"
+                className="text-blue-700 border-b underline pl-2 block"
+              >
+                Sign Up
+              </Link>
+            </p>
           </form>
         </div>
       </div>

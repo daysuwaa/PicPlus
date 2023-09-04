@@ -98,15 +98,26 @@ const SignIn = () => {
 
             {/* Sign-in button */}
             <div className="flex items-center justify-center mt-6">
-              <button
-                className="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 focus:outline-none focus:shadow-outline w-full md:w-[400px] rounded h-11"
-                type="button"
-                onClick={handleSignIn}
-              >
-                <p className='text-sm'>Sign In</p>
-              </button>
-            </div>
-          ;am;d
+  <Link to="/PicPlus/post">
+    <button
+      className="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 focus:outline-none focus:shadow-outline rounded h-11"
+      type="button"
+      onClick={handleSignIn}
+      style={{ width: '370px' }}
+    >
+      <p className='text-sm'>Sign In</p>
+    </button>
+  </Link>
+</div>
+
+
+          <p className='py-3'>Don't have an account?
+          <Link
+              to="/PicPlus/signup"
+              className=" text-blue-700  underline py-3 px-3 rounded-3xl transition duration-300 ease-in-out " >
+              Sign Up
+            </Link>
+          </p>
           </form>
         </div>
         
