@@ -14,7 +14,7 @@ const SignIn = () => {
 
   return (
     <div>
-    <h2 className='text-2xl  lg:text-3xl text-center mb-4 pt-5 font-semibold'>Sign In</h2>
+    <h2 className='text-2xl  lg:text-3xl text-center mb-4 pt-5 font-fontt2'>Sign In</h2>
     <div className="md:flex">
       {/* Image section */}
      
