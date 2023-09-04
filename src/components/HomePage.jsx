@@ -26,7 +26,7 @@ const HomePage = () => {
           </p>
           <div className="flex mt-9">
             <Link
-              to="/PicPlus/signin"
+              to="/PicPlus/login"
               className="bg-purple-700 hover:bg-orange-600 text-white font-semibold text-sm py-3 px-6 rounded-3xl mr-4 transition duration-300 ease-in-out shadow-md shadow-black">
               Sign In
             </Link>
