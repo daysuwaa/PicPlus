@@ -61,7 +61,14 @@ const SignIn = () => {
                 {showPassword ? <FiEyeOff /> : <FiEye />}
               </span>
             </label>
+           
           </div>
+          <Link
+              to="/PicPlus/signup"
+              className="text-blue-700 border-b underline mt-3"
+            >
+             Forgot password?
+            </Link>
 
           {/* Sign-in button */}
           <div className="flex items-center justify-center mt-6">
