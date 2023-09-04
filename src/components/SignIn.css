@@ -1,0 +1,9 @@
+/* SignIn.css */
+.background-image {
+    background-image: url('../assets/pic2.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
+  }
+  

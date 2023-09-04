@@ -14,7 +14,7 @@ const SignIn = () => {
 
   return (
     <div>
-    <h2 className='text-2xl text-center mb-4 pt-5 font-semibold'>Sign In</h2>
+    <h2 className='text-2xl  lg:text-3xl text-center mb-4 pt-5 font-semibold'>Sign In</h2>
     <div className="md:flex">
       {/* Image section */}
      
@@ -64,7 +64,7 @@ const SignIn = () => {
            
           </div>
           <Link
-              to="/PicPlus/signup"
+              to="/PicPlus/forgot"
               className="text-blue-700 border-b underline mt-3"
             >
              Forgot password?
@@ -83,7 +83,7 @@ const SignIn = () => {
           {/* Text */}
           <p className='pt-4 text-center'>Don't have an account?
             <Link
-              to="/PicPlus/forgot"
+              to="/PicPlus/signup"
               className="text-blue-700 border-b underline pl-2"
             >
               Sign Up
