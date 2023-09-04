@@ -111,12 +111,7 @@ const SignIn = () => {
               {errors.password && <p className="text-red-500 text-sm mt-2">{errors.password}</p>}
             </div>
 
-            <Link
-              to="/PicPlus/forgot"
-              className="text-blue-700 border-b underline mt-3 block"
-            >
-              Forgot password?
-            </Link>
+           
 
             
             {/* Sign-in button */}
@@ -126,7 +121,7 @@ const SignIn = () => {
       className="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 focus:outline-none focus:shadow-outline rounded h-11"
       type="button"
       onClick={handleSignIn}
-      style={{ width: '370px' }}
+      style={{ width: '350px' }}
     >
       <p className='text-sm'>Sign In</p>
     </button>
@@ -134,12 +129,12 @@ const SignIn = () => {
 </div>
 
             {/* Text */}
-            <p className='pt-4 text-center'>Don't have an account?
+            <p className='pt-4 text-center'>Already have an account?
               <Link
-                to="/PicPlus/signup"
-                className="text-blue-700 border-b underline pl-2 block"
+                to="/PicPlus/login"
+                className="text-blue-700 border-b underline pl-2 "
               >
-                Sign Up
+                Login
               </Link>
             </p>
           </form>

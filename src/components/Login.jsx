@@ -103,7 +103,7 @@ const SignIn = () => {
       className="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 focus:outline-none focus:shadow-outline rounded h-11"
       type="button"
       onClick={handleSignIn}
-      style={{ width: '370px' }}
+      style={{ width: '350px' }}
     >
       <p className='text-sm'>Sign In</p>
     </button>
