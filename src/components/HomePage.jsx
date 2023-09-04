@@ -27,14 +27,12 @@ const HomePage = () => {
           <div className="flex mt-9">
             <Link
               to="/PicPlus/signin"
-              className="bg-purple-700 hover:bg-orange-600 text-white font-semibold text-sm py-3 px-6 rounded-3xl mr-4 transition duration-300 ease-in-out shadow-md shadow-black"
-            >
+              className="bg-purple-700 hover:bg-orange-600 text-white font-semibold text-sm py-3 px-6 rounded-3xl mr-4 transition duration-300 ease-in-out shadow-md shadow-black">
               Sign In
             </Link>
             <Link
               to="/PicPlus/signup"
-              className="bg-purple-700 hover:bg-orange-600 text-white text-sm font-semibold py-3 px-6 rounded-3xl transition duration-300 ease-in-out shadow-md shadow-black"
-            >
+              className="bg-purple-700 hover:bg-orange-600 text-white text-sm font-semibold py-3 px-6 rounded-3xl transition duration-300 ease-in-out shadow-md shadow-black" >
               Sign Up
             </Link>
           </div>
