@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { FiEye, FiEyeOff, FiMail, FiLock } from 'react-icons/fi';
+import { FiEye, FiEyeOff, FiLock } from 'react-icons/fi';
+import { BsFillPersonFill} from 'react-icons/bs'
 import Picture2 from '../assets/pic2.jpg'; // Import the image
 import { Link } from 'react-router-dom';
 
@@ -28,9 +29,9 @@ const SignIn = () => {
           {/* Email section */}
           <div className="mb-4 text-black">
             <div className="relative">
-              <label className='pb-2'>Email:
+              <label className='pb-2'>Username:
                 <span className="absolute inset-y-0 left-0 flex items-center pl-3 pt-7">
-                  <FiMail className="text-black font-bold" />
+                  <BsFillPersonFill className="text-black font-bold" />
                 </span>
                 <input
                   className="shadow appearance-none border border-black rounded w-full py-2 pl-10 pr-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mt-2"
@@ -40,7 +41,7 @@ const SignIn = () => {
                 />
               </label>
             </div>
-          </div>
+            </div>
 
           {/* Password section */}
           <div className="relative">
