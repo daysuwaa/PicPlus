@@ -118,7 +118,7 @@ const SignIn = () => {
             <div className="flex items-center justify-center mt-6">
   <Link to="/PicPlus/post">
     <button
-      className="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 focus:outline-none focus:shadow-outline rounded h-11 w-[350px]"
+      className="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 focus:outline-none focus:shadow-outline rounded h-11 w-[320px]"
       type="button" 
       onClick={handleSignIn}
       
