@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FiEye, FiEyeOff, FiLock } from 'react-icons/fi';
-import { BsFillPersonFill} from 'react-icons/bs'
+import { MdPersonOutline} from 'react-icons/md'
 import Picture2 from '../assets/pic2.jpg'; // Import the image
 import { Link } from 'react-router-dom';
 
@@ -15,7 +15,7 @@ const SignIn = () => {
 
   return (
     <div>
-    <h2 className='text-2xl  lg:text-3xl text-center mb-4 pt-5 font-fontt2'>Sign In</h2>
+    <h2 className='text-2xl  lg:text-3xl text-center mb-4 pt-5 font-fontt2'>Log In</h2>
     <div className="md:flex">
       {/* Image section */}
      
@@ -31,7 +31,7 @@ const SignIn = () => {
             <div className="relative">
               <label className='pb-2'>Username:
                 <span className="absolute inset-y-0 left-0 flex items-center pl-3 pt-7">
-                  <BsFillPersonFill className="text-black font-bold" />
+                  <MdPersonOutline className="text-black font-bold" />
                 </span>
                 <input
                   className="shadow appearance-none border border-black rounded w-full py-2 pl-10 pr-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mt-2"
@@ -77,7 +77,7 @@ const SignIn = () => {
               className="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 focus:outline-none focus:shadow-outline w-[400px] rounded h-11"
               type="button"
             >
-              <p className='text-sm'>Sign In</p>
+              <p className='text-sm'>Log In</p>
             </button>
           </div>
 
