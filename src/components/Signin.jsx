@@ -83,7 +83,7 @@ const SignIn = () => {
           {/* Text */}
           <p className='pt-4 text-center'>Don't have an account?
             <Link
-              to="/PicPlus/signup"
+              to="/PicPlus/forgot"
               className="text-blue-700 border-b underline pl-2"
             >
               Sign Up

@@ -17,7 +17,7 @@ function App  () {
        <Route exact path="/PicPlus" element={<HomePage />} />
        <Route path="PicPlus/signin" element={<Signin />} />
        <Route path="PicPlus/signup" element={<Signup />} />
-       <Route path="PicPlus/signup" element={<Forgotpass />} />
+       <Route path="PicPlus/forgot" element={<Forgotpass />} />
        <Route path="PicPlus/post" element={<Post />} />
        <Route path="*" element ={<ErrorPage/>} />
      </Routes>
