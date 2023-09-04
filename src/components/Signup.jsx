@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { FiEye, FiEyeOff, FiMail, FiLock } from 'react-icons/fi';
 import { MdPersonOutline } from 'react-icons/md';
-import Picture2 from '../assets/pic2.jpg'; // Import the image
-import { Link } from 'react-router-dom'; // Import Link for navigation
+import Picture2 from '../assets/pic2.jpg'; 
+import { Link } from 'react-router-dom';
 
 const SignIn = () => {
   const [email, setEmail] = useState('');
@@ -16,7 +16,7 @@ const SignIn = () => {
   };
 
   const handleSignIn = () => {
-    // Check if any required fields are empty
+    // Checks if any required fields are empty
     const newErrors = {};
     if (!username) {
       newErrors.username = 'Username is required';
@@ -28,14 +28,11 @@ const SignIn = () => {
       newErrors.password = 'Password is required';
     }
 
-    // If there are errors, display them
+    // If there are errors, this wld display them
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
       return;
     }
-
-    // Proceed with the sign-in logic
-    // ...
   };
 
   return (
@@ -116,13 +113,12 @@ const SignIn = () => {
             
             {/* Sign-in button */}
             <div className="flex items-center justify-center mt-6">
-  <Link to="/PicPlus/post">
-    <button
-      className="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 focus:outline-none focus:shadow-outline rounded h-11 w-[250px] lg:w-[450px] sm:w-[570px] md:w-[300px]"
-      type="button" 
-      onClick={handleSignIn}
-      
-    >
+            <Link to="/PicPlus/post">
+            <button
+              className="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 focus:outline-none focus:shadow-outline rounded h-11 w-[250px] lg:w-[450px] sm:w-[570px] md:w-[300px]"
+              type="button" 
+              onClick={handleSignIn}
+           >
       <p className='text-sm'>Sign In</p>
     </button>
   </Link>
