@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FiEye, FiEyeOff, FiMail, FiLock } from 'react-icons/fi';
 import Picture2 from '../assets/pic2.jpg'; // Import the image
-
+import { Link } from 'react-router-dom';
 
 const SignIn = () => {
   const [email, setEmail] = useState('');
@@ -26,7 +26,7 @@ const SignIn = () => {
            <div className="mb-4 text-black">
   <div className="relative">
     <label className='pb-2'>Email:
-    <span className="absolute inset-y-0 left-0 flex items-center pl-3 pt-6">
+    <span className="absolute inset-y-0 left-0 flex items-center pl-3 pt-7">
       <FiMail className="text-black font-bold" /> {/* Email icon */}
     </span>
     <input
@@ -53,7 +53,7 @@ const SignIn = () => {
   />
   </label>
   <span
-    className="absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer pt-6"
+    className="absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer pt-7"
     onClick={handlePasswordToggle}
   >
     {showPassword ? <FiEyeOff /> : <FiEye />}
@@ -69,12 +69,22 @@ const SignIn = () => {
     <p className='text-sm'>Sign In</p>
   </button>
 </div>
-
+<p className='pt-4'>Don't have an account?
+<Link 
+            to="/PicPlus/signup"
+            className=" text-blue-700 border-b underline pl-2"
+          >
+           Sign Up
+          </Link>
+</p>
       </form>
     </div>
 
+   
 
+    
     </div>
+    
   );
 };
 
