@@ -101,7 +101,7 @@ const SignIn = () => {
                     className="absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer"
                     onClick={handlePasswordToggle}
                   >
-                    {showPassword ? <FiEyeOff className="text-blacl" /> : <FiEye className="text-black" />}
+                    {showPassword ? <FiEyeOff className="text-black cursor-pointer" /> : <FiEye className="text-black cursor-pointer" />}
                   </span>
                 </div>
               </div>

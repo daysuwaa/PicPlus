@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FiEye, FiEyeOff} from 'react-icons/fi';
-import Picture2 from '../assets/pic2.jpg'; // Import the image
+import Picture2 from '../assets/pic2.jpg'; 
 import { Link } from 'react-router-dom';
 
 const SignIn = () => {
@@ -14,7 +14,7 @@ const SignIn = () => {
   };
 
   const handleSignIn = () => {
-    // Check if any required fields are empty
+    // Checks if any required fields are empty
     const newErrors = {};
     if (!username) {
       newErrors.username = 'Username is required';
@@ -24,14 +24,10 @@ const SignIn = () => {
       newErrors.password = 'Password is required';
     }
 
-    // If there are errors, display them
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
       return;
     }
-
-    // Proceed with the sign-in logic
-    // ...
   };
 
   return (
@@ -82,7 +78,7 @@ const SignIn = () => {
                     className="absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer"
                     onClick={handlePasswordToggle}
                   >
-                    {showPassword ? <FiEyeOff className="text-black" /> : <FiEye className="text-black" />}
+                    {showPassword ? <FiEyeOff className="text-black cursor-pointer" /> : <FiEye className="text-black cursor-pointer" />}
                   </span>
                 </div>
               </div>
