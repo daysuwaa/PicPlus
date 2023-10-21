@@ -27,13 +27,17 @@ const SignIn = () => {
     if (!password) {
       newErrors.password = 'Password is required';
     }
-
-    // If there are errors, this wld display them
+  
+    // If there are errors, this will display them
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
-      return;
+      return; // Return early to prevent sign-in
     }
+  
+    // If no errors, proceed with sign-in logic
+    // You can add your sign-in logic here
   };
+  
 
   return (
     <div>
@@ -46,7 +50,7 @@ const SignIn = () => {
 
         {/* Form section */}
         <div className="w-full lg:w-[38rem] md:w-1/2 px-[2rem] md:py-[9rem] lg:py-[11rem] h-2 ">
-          <form className="  rounded px-8 pt-7 pb-8 mb-4 bg-gray-100">
+          <form className="  rounded px-8 pt-7 pb-8 mb-4 bg-gray-100"  onSubmit={handleSignIn} id="name">
 
             {/* Username */}
             <div className="mb-4 text-black">
@@ -115,12 +119,11 @@ const SignIn = () => {
             <div className="flex items-center justify-center mt-6">
             <Link to="/PicPlus/post">
             <button
-               className="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 focus:outline-none focus:shadow-outline rounded h-11 w-[350px] lg:w-[450px] sm:w-[570px] md:w-[270px]"
-              type="button" 
-              onClick={handleSignIn}
-           >
-      <p className='text-sm'>Sign In</p>
-    </button>
+    className="bg-indigo-600 hover:bg-blue-700 text-white font-bold py-2 px-4 focus:outline-none focus:shadow-outline rounded h-11 w-[350px] lg:w-[450px] sm:w-[570px] md:w-[270px]"
+    type="submit" // Change the button type to "submit"
+  >
+    <p className='text-sm'>Sign In</p>
+  </button>
   </Link>
 </div>
 
